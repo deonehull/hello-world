@@ -2,9 +2,10 @@
 <html>
 <head>
 <style>
-body {Hi my name is deon this will be the start of a new b
+body {
   margin: 0;
   min-width: 250px;
+  font-family:Comic;
 }
 /* Include the padding and border in an element's total width and height */
 * {
@@ -40,7 +41,7 @@ ul li:hover {
 }
 /* On click, add a background color and strike out text */
 ul li.checked {
-  background: #000;Photo by Thaddaeus Lim on Unsplash
+  background: #000;
   color: #fff;
   text-decoration: line-through;
 }
@@ -63,13 +64,19 @@ ul li.checked::before {
   right: 0;
   top: 0;
   padding: 12px 16px 12px 16px
+  border-radius: 0 0 20px 0;
 }
 .close:hover {
   background-color: #f44336;
   color: white;
 }
 /* Style the header */
-.header {   
+.header {
+  background-color: #008B98;
+  background-image: url("https://unsplash.com/?photo=RBthQZJd_vU");
+  padding: 30px 40px;
+  color: #fff;
+  text-align: center;
 }
 /* Clear floats after the header */
 .header:after {
@@ -99,14 +106,14 @@ input {
   transition: 0.4s;
 }
 .addBtn:hover {
-  background-color: #bbb;
+  background-color: #1a34c9;
 }
 </style>
 </head>
 <body>
 
 <div id="myDIV" class="header">
-  <h2 style="margin:5px">Deon Hull To Do List</h2>
+  <h2 style="margin:5px">Deon Hull's To Do List</h2>
   <input type="text" id="myInput" placeholder="Deon's task...">
   <span onclick="newElement()" class="addBtn">Add</span>
 </div>
@@ -115,8 +122,8 @@ input {
  <li class="checked">Complete the Online form</li>
   <li class="checked">Complete the assessment</li>
   <li>Complete the mini-project</li>
-  <li>Update my resume</li>
-  <li>Practice for my interview</li>
+  <li>https://drive.google.com/file/d/0B11CnK3BlW43dk5iWF9xaFNid0ZiNndRaVFQSHJBYlFwcWJv/view?usp=sharing</li>
+  <li>https://www.youtube.com/watch?v=qIi-tIrcaww</li>
 </ul>
  
 <script>
@@ -170,6 +177,8 @@ function newElement() {
     }
   }
 }
+<script type="text/javascript">
+    alert("Are you sure you want to delete this task?");
 </script>
 </body>
 <!-- Create for intial code base https://www.w3schools.com -->
